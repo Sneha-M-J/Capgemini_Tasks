@@ -1,0 +1,34 @@
+package day4;
+
+interface collage
+{
+	void dept(); //abstract method
+	default void lab()  //default method (new addition from Java 1.8
+	{
+		System.out.println("You have to do lab");
+	}
+}
+
+class Mech implements collage
+{
+	public void dept()
+	{
+		System.out.println("This is Mech Dept");
+	}
+	public void lab()
+	{
+		System.out.println("You have to do lab 1 Exercise");
+	}
+}
+
+
+public class InterfaceNewFeature 
+{
+	public static void main(String[] args) 
+	{
+		Mech m=new Mech();
+		m.dept();
+		m.lab();
+	}
+
+}

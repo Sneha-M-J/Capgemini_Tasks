@@ -1,0 +1,59 @@
+package day7.map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Student
+{
+	private int id;
+	private String name;
+	private String dept;
+	public Student(int id, String name, String dept) 
+	{
+		super();
+		this.id = id;
+		this.name = name;
+		this.dept = dept;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDept() {
+		return dept;
+	}
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", dept=" + dept + "]";
+	}
+	
+}
+
+public class MapUserDefinedDemo {
+
+	public static void main(String[] args) 
+	{
+		HashMap<Student,Integer> sm=new HashMap<Student,Integer>();
+		sm.put(new Student(1,"sachin","mech"),89);
+		sm.put(new Student(1,"sachin","mech"),90);
+		sm.put(new Student(2,"ravi","mech"),67);
+		System.out.println(sm);
+		
+		for(Map.Entry<Student,Integer> stu : sm.entrySet())
+		{
+			System.out.println(stu);
+		}
+	}
+
+}

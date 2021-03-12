@@ -1,0 +1,16 @@
+package day5.io;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class BufferedReaderDemo 
+{
+	public static void main(String[] args) throws IOException 
+	{
+		
+		
+		
+	}
+
+}

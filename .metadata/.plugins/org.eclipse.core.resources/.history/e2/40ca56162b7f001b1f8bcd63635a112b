@@ -1,0 +1,57 @@
+package Lab2;
+
+import java.util.Scanner;
+
+class Smallest
+{
+	int getSecondSmallest(int a[])
+	{
+		int n=a.length;
+		int first=9999, second=9999;
+		for(int i=1;i<n;i++)
+		{
+			if(a[i]<first)
+			{
+				second=first;
+				first=a[i];
+			}
+			else if(a[i]<second && a[i]!=first)
+			{
+				second=a[i];
+			}
+		}
+		if(second==9999)
+		{
+			return 9999;
+		}
+		else
+			return second;
+	}
+}
+public class Exercise1
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the no of elements in an array");
+		int n=sc.nextInt();
+//		if(n<2)
+//		{
+//			System.out.println("Enter atleast 2 elements");
+//			exit(0);
+//		}
+		int arr[]=new int[n];
+		System.out.println("Enter the array elements");
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		Smallest s=new Smallest();
+		int small=s.getSecondSmallest(arr);
+		if(small==9999)
+			System.out.println("No Second Smallest element");
+		else
+			System.out.println("Second Smallest element is : "+small);
+		sc.close();
+	}
+}

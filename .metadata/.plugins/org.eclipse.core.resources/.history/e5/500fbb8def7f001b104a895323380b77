@@ -1,0 +1,24 @@
+package day4.exception;
+import java.util.Scanner;
+
+public class ExceptionDemo1 
+{
+	public static void main(String[] args) 
+	{	
+		int result=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter 2 numbers");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		try
+		{
+			result=a/b;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Do not enter zero");
+		}
+		System.out.println("Result = "+result);
+	}
+
+}

@@ -1,0 +1,10 @@
+package day4.exception;
+
+public class CheckedExceptionDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

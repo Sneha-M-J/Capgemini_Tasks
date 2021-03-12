@@ -1,0 +1,46 @@
+package day4;
+
+interface Vehicle1
+{
+	int speedLimit=10;
+	void wheel();
+}
+
+interface Engine1 extends Vehicle1
+{
+	int speedLimit=30;
+	void engine();
+}
+
+class TestDrive
+{
+	void drive()
+	{
+		System.out.println("you can test drive");
+	}
+}
+
+
+class Car1 extends TestDrive implements Engine1
+{
+	public void wheel()
+	{
+		System.out.println("4 wheels");
+	}
+	public void engine()
+	{
+		System.out.println("petrol engine");
+	}
+}
+
+
+public class InterfaceDemo3 
+{
+	public static void main(String[] args) 
+	{
+		Car1 c=new Car1();
+		c.wheel();
+		c.engine();
+		c.drive();
+	}
+}

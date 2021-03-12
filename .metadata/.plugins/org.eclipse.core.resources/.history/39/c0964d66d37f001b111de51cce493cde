@@ -1,0 +1,34 @@
+package day4;
+
+@FunctionalInterface
+interface Test  //should contain only one abstract method
+{
+	abstract void display();
+}
+
+interface Calculate
+{
+	void operation(int a,int b);
+}
+
+
+public class FunctionalInterfaceDemo1 
+{
+	public static void main(String[] args) 
+	{
+		Test t=()->System.out.println("hello this is dispaly imp1");
+		t.display();
+		
+		Test t2=()->
+		{
+			System.out.println("this is dispaly imp1");
+			System.out.println("this is multi line statement");
+		};
+		t2.display();
+		
+		System.out.println("=========================");
+		Calculate add=(a,b)->a+b;
+		
+	}
+
+}

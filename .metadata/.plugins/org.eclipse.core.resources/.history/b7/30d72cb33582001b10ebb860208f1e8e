@@ -1,0 +1,31 @@
+package day7.set;
+
+class Emp
+{
+	int id;
+	String name;
+	public Emp(int id, String name)
+	{
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	
+}
+public class SetDemo1 
+{
+	public static void main(String[] args) 
+	{
+		String s1="hello";
+		String s2="hello";
+		System.out.println(s1.hashCode());
+		System.out.println(s2.hashCode());
+		
+		Emp e1=new Emp(1,"Sam");
+		Emp e2=new Emp(1,"Sam");
+		
+		System.out.println(e1.hashCode());
+		System.out.println(e2.hashCode());
+	}
+
+}

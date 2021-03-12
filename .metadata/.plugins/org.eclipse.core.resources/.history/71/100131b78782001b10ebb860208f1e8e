@@ -1,0 +1,14 @@
+package Lab4.Exercise3;
+
+public class Book extends WrittenItem
+{
+	public Book(int uid, String title, int noOfCopy, String author) 
+	{
+		super(uid, title, noOfCopy, author);
+	}
+
+	public void print()
+	{
+		super.print();
+	}
+}

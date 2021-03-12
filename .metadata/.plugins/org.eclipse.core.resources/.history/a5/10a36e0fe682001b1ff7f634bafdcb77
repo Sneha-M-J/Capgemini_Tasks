@@ -1,0 +1,66 @@
+package day8.collections;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+class Employee
+{
+	int id;
+	String name;
+	String dept;
+	int salary;
+	
+	public Employee(int id, String name, String dept, int salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.dept = dept;
+		this.salary = salary;
+	}
+	
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", dept=" + dept + ", salary=" + salary + "]";
+	}
+	
+}
+
+
+public class ComparableDemo {
+
+//	Employee findByDept(Employee e, ArrayList<Employee> emplist)
+//	{
+//		ArrayList<Employee> emp=new ArrayList<Employee>();
+//		if(e.dept.equals("developer"))
+//			emp.add(e);
+//	    return e;
+//	}
+	
+	
+	public static void main(String[] args) 
+	{
+		ArrayList<Employee> emplist =new ArrayList<Employee>();
+		emplist.add(new Employee(1,"ravi","hr",65000));
+		emplist.add(new Employee(2,"anil","developer",80000));
+		emplist.add(new Employee(17,"suresh","ui",70000));
+		emplist.add(new Employee(4,"kumar","developer",95000));
+		
+		System.out.println("Employee list : "+emplist);
+		
+		//display only developers
+		Iterator<Employee> it=emplist.iterator();
+		while(it.hasNext())
+		{
+			Employee e=it.next();
+			if(e.dept=="developer")
+			{
+				System.out.println(e.id+" "+e.name+" "+e.dept+" "+e.salary);
+			}
+		}
+		
+//		ComparableDemo c=new ComparableDemo();
+//		c.findByDept(e);
+	}
+
+	
+}
