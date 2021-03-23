@@ -78,19 +78,24 @@ abstract class Item
 	
 	public void checkIn() //book comes back to library
 	{
+		System.out.println("Item has been checked in");
 		noOfCopy+=1;
 	}
 	
 	public void checkOut() //book is taken by student
 	{
 		if(noOfCopy>=1)
-		   noOfCopy-=1;
+		{
+			System.out.println("Item has been checked out");
+			noOfCopy-=1;
+		}
 		else
 			System.out.println("Item Out of Stock");
 	}
 	
 	public void addItem()
 	{
+		System.out.println("Item has been added");
 		noOfCopy++;
 	}
 	

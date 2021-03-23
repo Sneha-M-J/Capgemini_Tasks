@@ -16,10 +16,14 @@ public class CollectionsUtilityMethods
 		
 		Collections.sort(project1);
 		System.out.println("Project1 after sorting: "+project1);
-		//Collections.reverse(project1);
-		System.out.println("Project1 after reversing: "+project1);
 		
-		int index=Collections.binarySearch(project1, "Sachin");
+		Collections.reverse(project1);
+		System.out.println("Project1 after reversing: "+project1);
+		Collections.reverse(project1);
+		System.out.println("Project1 after reversing again: "+project1);
+		
+		//Elements should be in sorted (ascending) order
+		int index=Collections.binarySearch(project1, "Sachin"); 
 		System.out.println("Element found at: "+index);
 		
 		int index1=Collections.binarySearch(project1, "Sneha");

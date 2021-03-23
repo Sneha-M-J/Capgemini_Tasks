@@ -15,6 +15,8 @@ public class StringDemo1
 		System.out.println("s1==s3 => "+(s1==s3));
 		System.out.println("s4==s5 => "+(s4==s5));
 		System.out.println("s4.equals(s5) => "+(s4.equals(s5)));
+		System.out.println("s1.equals(s5) => "+(s1.equals(s5)));
+		System.out.println("s3.equals(s5) => "+(s3.equals(s5)));
 	}
 
 }

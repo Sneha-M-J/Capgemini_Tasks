@@ -1,4 +1,4 @@
-package March12;
+package PracticeTest1;
 
 class Shape
 {

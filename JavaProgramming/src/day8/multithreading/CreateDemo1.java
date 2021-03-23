@@ -28,7 +28,8 @@ public class CreateDemo1
 		//Implementing Runnable Interface - Create a thread object and then call start()
 		B obj2=new B();
 		Thread t1=new Thread(obj2);
-		t1.start();
+		t1.start(); //performs multitasking
+//		t1.run();  //performs normal or sequential method call
 	}
 
 }

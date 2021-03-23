@@ -3,13 +3,13 @@ package day4;
 interface Vehicle1
 {
 	int speedLimit=10;
-	void wheel();
+	void wheel();  //abstract method
 }
 
 interface Engine1 extends Vehicle1
 {
 	int speedLimit=30;
-	void engine();
+	void engine();   //abstract method
 }
 
 class TestDrive

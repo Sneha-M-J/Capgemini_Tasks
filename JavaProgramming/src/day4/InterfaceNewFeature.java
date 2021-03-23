@@ -1,12 +1,17 @@
 package day4;
-//new feature added in Java 1.8
+
+//new feature added in Java 1.8 (interface can contain abstract, static or default methods)
 interface collage
 {
-	void dept(); //abstract method
-	default void lab()  //default method (new addition from Java 1.8
+	void dept(); //abstract method has to be compulsorily overridden
+	
+	//defaults methods can be overridden
+	default void lab()  //default method (new addition from Java 1.8)
 	{
 		System.out.println("You have to do lab");
 	}
+	
+	//static methods cannot be overridden	
 }
 
 class Mech implements collage

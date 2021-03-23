@@ -8,13 +8,15 @@ class Product
 	int pid;
 	String pname;
 	float price;
-	public Product(int pid, String pname, float price) {
+	public Product(int pid, String pname, float price) 
+	{
 		super();
 		this.pid = pid;
 		this.pname = pname;
 		this.price = price;
 	}
-	public String toString() {
+	public String toString() 
+	{
 		return "Product [id=" + pid + ", name=" + pname + ", price=" + price + "]";
 	}
 	

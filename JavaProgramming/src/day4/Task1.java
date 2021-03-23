@@ -5,12 +5,15 @@ class Car11
 	private int yearModel;
 	private String make;
 	private int speed=0;
-	public Car11(int yearModel, String make) {
+	
+	public Car11(int yearModel, String make)
+	{
 		super();
 		this.yearModel = yearModel;
 		this.make = make;
 		this.speed = 0;
 	}
+	
 	public int getYearModel() {
 		return yearModel;
 	}

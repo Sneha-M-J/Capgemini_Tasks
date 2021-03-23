@@ -9,7 +9,7 @@ public class Book extends WrittenItem
 		
 	public void print()
 	{
-		System.out.println("Book Data");
+		System.out.println("Book Data : ");
 		super.print();
 	}
 

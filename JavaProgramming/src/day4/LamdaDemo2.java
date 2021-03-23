@@ -1,8 +1,8 @@
 package day4;
 
-interface Eligibility
+interface Eligibility   //functional interface
 {
-	String checkAge(int age);
+	String checkAge(int age);   //abstract method
 }
 public class LamdaDemo2 
 {

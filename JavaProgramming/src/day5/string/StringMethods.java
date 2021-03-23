@@ -14,8 +14,8 @@ public class StringMethods
 		System.out.println("equals(Hello) "+s1.equals("Hello"));
 		System.out.println("equalsIgnoreCase(Hello) "+s1.equalsIgnoreCase("Hello"));
 		System.out.println("replace "+s1.replace('1','p'));
-		System.out.println("sub string "+s1.substring(1));
-		System.out.println("sub string "+s1.substring(1,4));
+		System.out.println("substring "+s1.substring(1));
+		System.out.println("substring "+s1.substring(1,3));   //string from 1 to 3-1
 		
 		String s2="    Welcome    ";
 		System.out.println("s2 : "+s2+"hi");

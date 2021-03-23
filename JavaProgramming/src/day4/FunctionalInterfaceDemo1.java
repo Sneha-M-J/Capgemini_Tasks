@@ -16,6 +16,7 @@ public class FunctionalInterfaceDemo1
 {
 	public static void main(String[] args) 
 	{
+		//lambda expressions
 		Test t=()->System.out.println("hello this is dispaly imp1");
 		t.display();
 		

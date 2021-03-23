@@ -7,8 +7,7 @@ public class CompareToDemo
 		System.out.println("a".compareTo("a"));
 		System.out.println("a".compareTo("c"));
 		System.out.println("abch".compareTo("abfa"));
-        		
-		
+        			
 	}
 
 }

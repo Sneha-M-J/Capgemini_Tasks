@@ -49,7 +49,7 @@ public class SetDemo1
 		System.out.println(s1.hashCode());
 		System.out.println(s2.hashCode());
 		
-		Emp e1=new Emp(1,"Sam"); //e1 and e2 gives different hash codes, to get the same hash cde
+		Emp e1=new Emp(1,"Sam"); //e1 and e2 gives different hash codes, to get the same hash code
 		//add hashCode() and equals() in class using right click -> source ->generate hashCode() and equals().
 		Emp e2=new Emp(1,"Sam");
 		

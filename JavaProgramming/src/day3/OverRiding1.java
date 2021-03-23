@@ -6,7 +6,7 @@ class Bank2
 	{
 		System.out.println("1%");
 	}
-	static void display()
+	static void display()    //static methods cannot be overridden (they do not give error also)
 	{
 		System.out.println("Parent class");
 	}

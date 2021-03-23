@@ -47,7 +47,7 @@ public class JournalPaper extends WrittenItem
 
 	public void print()
 	{
-		System.out.println("Journal Paper Data");
+		System.out.println("Journal Paper Data : ");
 		super.print();
 		System.out.println("Published year : "+year);
 	}

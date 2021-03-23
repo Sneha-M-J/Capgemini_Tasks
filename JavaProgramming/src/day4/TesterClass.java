@@ -4,6 +4,7 @@ class SavingsAccount
 {
 	private int balance;
 	private int interest;
+	
 	public SavingsAccount(int balance, int interest)
 	{
 		super();

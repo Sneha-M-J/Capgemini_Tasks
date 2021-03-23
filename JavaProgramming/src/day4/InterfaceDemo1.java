@@ -3,7 +3,7 @@ package day4;
 interface  Bank
 {
 	void rateOfInterest();
-	//abstract void rateOfInterest();
+	//same as abstract void rateOfInterest();
 	int workingDays=27;
 }
 
@@ -30,7 +30,7 @@ public class InterfaceDemo1
 {
 	public static void main(String[] args)
 	{
-		Bank b=new SBI();  //cannot access creditLimit
+		Bank b=new SBI();  //cannot access creditLimit()
 		b.rateOfInterest();
 		
 		SBI s=new SBI();
