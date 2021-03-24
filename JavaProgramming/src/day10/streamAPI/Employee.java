@@ -3,6 +3,7 @@ package day10.streamAPI;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+//refer StreamDemo1 and StreamSortDemo class
 class Employee implements Comparable<Employee>
 {
 	private int id;

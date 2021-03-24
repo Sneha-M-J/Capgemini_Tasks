@@ -58,6 +58,7 @@ public class StreamDemo1
 		//display name with length
 		//use map because we want length of every name 
 		System.out.println("====Name length====");
+		//emplist.forEach(s->System.out.println(s.getName()+" "+s.getName().length()));
 		emplist.stream().map(e->e.getName()+" "+e.getName().length()+" "+e.getDept()).forEach(s->System.out.println(s));
 		System.out.println();
 		
@@ -81,6 +82,7 @@ public class StreamDemo1
 		
 		//make a list consisting of employees whose name starts with "r"
 		//collect() is used to collect result in a list
+		System.out.println("====List of employees whose name starts with r====");
 		List<Employee> emp=emplist.stream().filter(s->s.getName().startsWith("r")).collect(Collectors.toList());
 		emp.forEach(s->System.out.println(s));
 		System.out.println();

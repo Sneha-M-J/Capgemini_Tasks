@@ -44,6 +44,7 @@ public class EmpMain {
  List<Employee> el7=es.sortDeptId(elist);
  for(Employee e: el7)
  System.out.println(e);
+ 
 }
 
 }

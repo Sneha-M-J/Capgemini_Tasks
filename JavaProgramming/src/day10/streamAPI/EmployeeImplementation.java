@@ -16,12 +16,13 @@ Create EmployeeImplementation class for following functionalities
 
  */
 
-//refer EmployeeTask class
 package day10.streamAPI;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
+//refer EmployeeTask class
 public class EmployeeImplementation 
 {
 	public static void main(String[] args) 
@@ -29,7 +30,7 @@ public class EmployeeImplementation
 		ArrayList<EmployeeTask> emplist =new ArrayList<EmployeeTask>();
 		emplist.add(new EmployeeTask(1,"sachin",45000,"nitin",10));
 		emplist.add(new EmployeeTask(2,"anil",55000,"Ram",20));
-		emplist.add(new EmployeeTask(3,"kumar",65000,"varma",2));
+		emplist.add(new EmployeeTask(3,"kumar",65000,"varma",20));
 		emplist.add(new EmployeeTask(4,"anish",45000,"sunil",4));
 		emplist.add(new EmployeeTask(5,"manish",50000,"nitin",10));
 		
@@ -64,6 +65,7 @@ public class EmployeeImplementation
 		List<EmployeeTask> empnameA=emplist.stream().filter(s->s.getName().startsWith("a")).collect(Collectors.toList());
 		empnameA.forEach(s->System.out.println(s));
 		System.out.println();
+
 	}
 
 }

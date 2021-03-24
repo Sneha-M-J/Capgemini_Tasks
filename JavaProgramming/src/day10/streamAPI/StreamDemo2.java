@@ -14,7 +14,7 @@ public class StreamDemo2
 		num.forEach(x->System.out.println(x));
 		System.out.println("After Sorting");
 		//can use sorted because Integer (Wrapper class) implements comparable interface
-		num.stream().sorted().forEach(x->System.out.println(x));
+		num.stream().sorted().forEach(x->System.out.println(x));  //original list is not changed so print here only using forEach loop
 		System.out.println();
 		
 		ArrayList<String> names=new ArrayList<String>();

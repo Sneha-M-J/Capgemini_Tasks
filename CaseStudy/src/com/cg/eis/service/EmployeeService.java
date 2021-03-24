@@ -58,25 +58,25 @@ import com.cg.eis.pl.*;
 
 
 public class EmployeeService 
-{
+{     //1
 	public double getSumOfSalary(List<Employee> elist)
 	{
 		double sal=elist.stream().mapToDouble(e->e.getSalary()).sum();
 		return sal;
 	}
-	
+	//5
 	public List<Employee> getEmployeeWithoutDept(List<Employee> elist)
 	{
 		List<Employee> l=elist.stream().filter(e->e.getDep()==null).collect(Collectors.toList());
 		return l;
 	}
-	
+	//12
 	public List<Employee> didnotHaveManager(List<Employee> elist)
 	{
 		List<Employee> l=elist.stream().filter(e->e.getManagerId()==null).collect(Collectors.toList());
 		return l;
 	}
-	
+	//11
 	public List<String> getSalInc(List<Employee> elist)
 	{
 		List<String> l=elist.stream().map(e->e.getFirstName()+" "+e.getLastName()+" "+e.getSalary()+" "+e.getSalary()*1.5).collect(Collectors.toList());
@@ -122,6 +122,16 @@ public class EmployeeService
 		List<Employee> e=elist.stream().sorted(DeptidComparator).collect(Collectors.toList());
 		return e;
 	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -66,11 +66,93 @@ and arrive at some output.
 
 package doSelect;
 
-public class Source3 {
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+class Employee 
+{
+    private String name;
+    private int salary;
+    public Employee(String name,int salary)
+    {
+        super();
+        this.name=name;
+        this.salary=salary;
+    }
 
+    public String getName()
+    {
+        return this.name;
+    }
+    public int getSalary()
+    {
+        return this.salary;
+    }
+    public void setName(String name)
+    {
+        this.name=name;
+    }
+    public void setSalary(int salary)
+    {
+        this.salary=salary;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("<");
+        sb.append("name: ");
+        sb.append(name);
+        sb.append(" salary: ");
+        sb.append("" + salary+">");
+        return sb.toString();
+    }
+}
+
+class EmployeeInfo
+{
+    enum SortMethod 
+    {
+        BYNAME, BYSALARY
+    };
+    public List<Employee> sort(List<Employee> emps, final SortMethod method)
+    {
+        switch(method)
+        {
+            case BYNAME:
+            return emps.stream().sorted(Comparator.comparing(Employee::getName)).collect(Collectors.toList());
+
+            case BYSALARY:
+            return emps.stream().sorted(Comparator.comparing(Employee::getSalary).thenComparing(Employee::getName)).collect(Collectors.toList());
+        }
+        return null;
+    }
+
+    public boolean isCharacterPresentInAllNames(Collection<Employee> entities, String character)
+    {
+        long c=0;
+        c=entities.stream().filter(e->e.getName().endsWith(character)).count();
+        if(c==entities.size())
+           return true;
+        else
+           return false;
+    }
+}
+
+public class Source3 
+{
+	public static void main(String[] args) 
+	{
+		List<Employee> emps = new ArrayList<>();
+		emps.add(new Employee("Mickey", 100000));
+		emps.add(new Employee("Timmy", 50000));
+		emps.add(new Employee("Annny", 40000));
+		
+		EmployeeInfo obj=new EmployeeInfo();
+		//obj.sort(emps, SortMethod BYNAME)
+		System.out.println(obj.isCharacterPresentInAllNames(emps,"y"));
+		System.out.println(obj.isCharacterPresentInAllNames(emps,"a"));
 	}
 
 }

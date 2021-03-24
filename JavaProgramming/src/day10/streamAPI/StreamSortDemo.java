@@ -3,7 +3,7 @@ package day10.streamAPI;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-
+//refer Employee class
 public class StreamSortDemo
 {
 	public static void main(String[] args)
