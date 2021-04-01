@@ -8,10 +8,10 @@ public class Exercise9
 {
 	public void duration(LocalDate d1)
 	{
-		LocalDate d2=java.time.LocalDate.now();
+		LocalDate d2=LocalDate.now();
 		//d2 is current date
 		System.out.println("Difference is : ");
-		Period diff=Period .between(d1, d2);
+		Period diff=Period.between(d1, d2);
 		System.out.printf("%d years, %d months and %d days", diff.getYears(),diff.getMonths(),diff.getDays());
 	}
 	
