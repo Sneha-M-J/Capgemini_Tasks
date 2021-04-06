@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=LayeredArchitecture/src&lt;com.cap.service{IProductService.java[IProductService" modifiers="513" timestamp="1615962817194"/>
+    <typeInfo handle="=SpringDemo2/src&lt;com.entity{HotDrink.java[HotDrink" modifiers="513" timestamp="1617684133735"/>
+    <typeInfo handle="=SpringDemo2/src&lt;com.entity{SoftDrink.java[SoftDrink" modifiers="513" timestamp="1617684123197"/>
+    <typeInfo handle="=SpringDemo2/src&lt;com.example2.dao{daoInterface.java[daoInterface" modifiers="513" timestamp="1617722148464"/>
 </typeInfoHistroy>

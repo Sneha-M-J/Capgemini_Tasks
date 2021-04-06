@@ -33,6 +33,7 @@ public class StudentTransactionDemo
 	    em.getTransaction().commit();  
 	    
 	    //if we have both operations within same transaction and if any 1 operation fails, all the transactions are rolled back
+	    //so it is better to keep different transactions differently 
 	}
 
 }

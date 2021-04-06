@@ -18,9 +18,10 @@ public class JPQLDemo1
 		
 		//jpql query  (Query is an interface)
 		//1. Retrieve records 
+		System.out.println("Using Query");
 		Query q1=em.createQuery("select s from Student s");
 		List<Student> l=q1.getResultList();
-		System.out.println(l);  //implement toStrin() in Student class to format the output
+		System.out.println(l);  //implement toString() in Student class to format the output
         System.out.println();
         
         //2.iterate through the list
@@ -29,11 +30,14 @@ public class JPQLDemo1
 		{
 			System.out.println(s.getId()+" "+s.getDept()+" "+s.getName());	
 		}
-		
+		System.out.println();
+		  
 		//3.Typed Query
-		System.out.println("Typed Query");
+		System.out.println("=========================");
+		System.out.println("Using Typed Query");
 		TypedQuery<Student> q2=em.createQuery("select s from Student s",Student.class);
-		List<Student> st=q2.getResultList();
+		List<Student> l2=q2.getResultList();
+		System.out.println(l2); 
 		em.getTransaction().commit();
 		//em.close();
 	}

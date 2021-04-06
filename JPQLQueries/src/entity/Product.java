@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @NamedQueries
 (
 		{
-			@NamedQuery(name="findById2",query="select p from Product p where id=2"),
+			@NamedQuery(name="findById2",query="select p from Product p where id=2"),    //id value is fixed as 2
 			@NamedQuery(name="findById",query="select p from Product p where id=:id"),   //takes id value during runtime dynamically
 			@NamedQuery(name="findByPrice",query="select p from Product p where price>:price")
 		}

@@ -23,7 +23,7 @@ public class TableInfo
 			//step-3
 			Statement stmt=oracleconn.createStatement();
 			ResultSet rs=stmt.executeQuery("select * from register");
-			ResultSetMetaData rsm=rs.getMetaData();
+			ResultSetMetaData rsm=rs.getMetaData();   
 			System.out.println(rsm.getColumnCount());
 			System.out.println(rsm.getColumnName(1));
 			System.out.println(rsm.getColumnName(2));

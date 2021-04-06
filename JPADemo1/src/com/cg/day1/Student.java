@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Entity  //annotation that tells the class can persist
 @Table(name="student30")  //maps to student30 table
-//if not mentioned, it maps to Student table
+//if not mentioned, it maps to Student table (same as class name)
 
 @NamedQuery(name="findAll",query="select s from Student s")
 //to have multiple named queries use below syntax
@@ -16,7 +16,7 @@ import javax.persistence.Table;
     (
 		{
 			@NamedQuery(name="findAllObject",query="select s from Student s"),
-			@NamedQuery(name="findById", query="select s from Student s where s.id= :id")
+			@NamedQuery(name="findById", query="select s from Student s where s.id= :id")  //to get id in runtime use :id
 		}
 	)
 public class Student

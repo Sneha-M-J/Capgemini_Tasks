@@ -78,31 +78,50 @@ Activity(String string1,String string2,String operator)
 }
 public class Source2
 {
+//	public String handleException(Activity a) 
+//	  {
+//		try
+//		{
+//		if(a.string1==null ||a.string2==null)
+//	      throw new NullPointerException("Null values found");
+//	    }  
+//		catch(NullPointerException e)
+//		{
+//			return "Null values found";
+//		}
+//		
+//		try
+//		{
+//	    if(a.operator!="+" && a.operator!="-")
+//	      throw new Exception(a.operator); 
+//		}
+//		catch(Exception e)
+//		{
+//			return a.operator;
+//		}
+//	    
+//	      return "No Exception Found";
+//	  }
+	  
 	public String handleException(Activity a) 
-	  {
+	{
 		try
 		{
-		if(a.string1==null ||a.string2==null)
-	      throw new NullPointerException("Null values found");
-	    }  
+			if(a.string1==null ||a.string2==null)
+			      throw new NullPointerException("Null values found");
+			if(a.operator!="+" && a.operator!="-")
+			      throw new Exception(a.operator); 
+		}
 		catch(NullPointerException e)
 		{
 			return "Null values found";
-		}
-		
-		try
-		{
-	    if(a.operator!="+" && a.operator!="-")
-	      throw new Exception(a.operator); 
 		}
 		catch(Exception e)
 		{
 			return a.operator;
 		}
-	    
-	      return "No Exception Found";
-	  }
-	  
+	    return "No Exception Found";
+	}
 	  public String doOperation(Activity a)
 	  {
 		  String result="";
