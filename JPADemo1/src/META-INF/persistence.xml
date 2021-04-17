@@ -13,7 +13,7 @@
             <property name="javax.persistence.jdbc.password" value="sneha" />    <!-- give ur workspace password -->
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
            
-            <property name="hibernate.hbm2ddl.auto" value="update"/>   <!-- updates the value everytime it changes, create will create newly everytime -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>   <!-- updates the value of the table everytime it changes, create will create table newly everytime -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
             <property name="hibernate.show_sql" value="true"/>
           <!--   <property name="hibernate.format_sql" value="true"/> --> 

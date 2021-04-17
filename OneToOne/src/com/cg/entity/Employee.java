@@ -18,7 +18,7 @@ public class Employee
 	private String designation;
 	
 	//uni directional
-	@OneToOne(cascade=CascadeType.ALL)    //type of reletionship
+	@OneToOne(cascade=CascadeType.ALL)    //type of relationship
 	@JoinColumn(name="address_id") //foreign key
 	private Address address;
 

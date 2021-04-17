@@ -44,7 +44,7 @@ public class Client
 		System.out.println("p1 : "+p1);
 		System.out.println();
 		
-		//use setParamete()r if u use dynamic id's
+		//use setParameter() if u use dynamic id's
 		Query q4=em.createNamedQuery("findById").setParameter("id",3);
 		Product p2=(Product) q4.getSingleResult();  //returns only a single row
 		System.out.println("p2 : "+p2.getProductId()+" "+p2.getProductname()+" "+p2.getPrice());
